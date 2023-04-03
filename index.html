@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+     
+    <!--nav-bar-btn-font-link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!--nav-bar-logo-font-link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <title>YourSkill</title>
+
+    <style>
+        body{
+            background-color:rgb(94, 94, 94);
+        }
+        .section-padding{
+            padding: 100px 0px;
+        }
+        .carousel-item{
+            height: 600px;
+        }
+        .carousel-caption{
+            bottom: 220px;
+            z-index: 2;
+        }
+        .carousel-caption h5{
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+        }
+        .carousel-caption p{
+            margin: auto;
+            font-size: 18px;
+        }
+        /**nav-bar-btn-font**/
+        .nav-link{
+            font-family: 'Roboto', sans-serif;
+        }
+        /**nav-bar-logo-font-link**/
+        .navbar-brand{
+            font-family: 'Lobster', cursive;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+        }
+        .p1{
+            text-align: justify;
+        }
+        .carousel-indicators{
+            background-color: rgba(0,0,0,0.6);
+            position:absolute;
+            margin-left: 0%;
+            margin-bottom:0%;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+        .btn{
+            border-radius: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+
+            <!--toggler-button-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ToggleMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand text-primary" href="#"><b><spam class="text-warning">Your</spam>Skill</b></a>
+            <!--MANU BUTTONS-->
+            <div class="collapse navbar-collapse" id="ToggleMenu">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-warning active" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning " href="#upload">UPLOAD SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#project">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#team">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#contact">CONTACT ME</a>
+                    </li>
+                    <li>
+                      <a href="#logout" type="button" class="btn btn-dark btn-outline-warning py-1 px-3 rounded mx-3 d-flex justify-content-center text-white">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carousel-->
+    <div id="carousel-Indicators" class="carousel slide" data-bs-ride="carousel">
+        
+       <!-- <div class="carousel-indicators">
+          <li type="button" data-bs-target="#carousel-Indicators" data-bs-slide-to="0" class="active"></li>
+          <li type="button" data-bs-target="#carousel-Indicators" data-bs-slide-to="1"></li>
+          <li type="button" data-bs-target="#carousel-Indicators" data-bs-slide-to="2"></li>
+          <li type="button" data-bs-target="#carousel-Indicators" data-bs-slide-to="3"></li>
+          <li type="button" data-bs-target="#carousel-Indicators" data-bs-slide-to="4"></li>
+        </div>-->
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 h-100" src="skills1.jpg" alt="...">
+                <div class="carousel-caption">
+                   <h5 class="text-warning">YOUR CHOICE</h5>
+                   <p>(FIND A CAREERs ACCORDING TO YOUR SKILLS)</p>
+                   <p><a href="#" class="btn btn-dark btn-outline-warning text-white mt-3">DESCRIPTION</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-100" src="skills2.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="text-warning">YOUR CHOICE</h5>
+                   <p>(FIND A CAREERs ACCORDING TO YOUR SKILLS)</p>
+                   <p><a href="#" class="btn btn-dark btn-outline-warning text-white mt-3">DESCRIPTION</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-100" src="skills3.jpg" alt="...">
+                <div class="carousel-caption ">
+                    <h5 class="text-warning">YOUR CHOiCE</h5>
+                    <p>(FIND A CAREERs ACCORDING TO YOUR SKILLS)</p>
+                    <p><a href="#" type="button" class="btn btn-dark btn-outline-warning text-white mt-3">DESCRIPTION</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-100" src="skills4.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="text-warning">YOUR CHOiCE</h5>
+                    <p>(FIND A CAREERs ACCORDING TO YOUR SKILLS)</p>
+                    <p><a href="#" class="btn btn-dark btn-outline-warning text-white mt-3">DESCRIPTION</a></p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carousel-Indicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carousel-Indicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!--ABOUT SECTION-->
+    <section id="upload" class="about pt-4">
+        <div class="container border p-1">
+            <div class="row">
+                <div class="col">
+                    <div class="about-img">
+                        <img src="project1.jpg" alt="" class="img-fluid img-thumbnail bg-primary">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-text text-white">
+                        <h2 class="text-warning">We Provide Jobs Your <br> Skills Basses</h2>
+                        <p class="p1">
+                            Hi Sir,<br>
+                            Job skills are the various abilities you use to complete your work from workplace skills like time management to technical skills like programming."The purpose of this website of ours is to provide jobs to you and that too to give jobs according to your skills. For example, if you know how to do graphics designing, then you will be given the job of graphics. In this way, whatever skills you have, share your skills today and get a job, even sitting at home".
+                            <hr>
+                            <h class="text-white">
+                                PAROGRAMING,CONTENT WRITING,BOOK DESIGN,RESUME WRITING,RESEARCH & SUMMARIES,GRAPHICS DESIGNING,WEB DEVELOPMENT.WEB DESIGNING,WORDPRES WEBSITE,LANDING PAGES,GAME DEVELOP,BANNER DESIGNING,PHOTO EDITING,LOGO DESIGNING,VIDEO EDITING,VIDEO ADS,LOGO ANIMATION,VIDEO TRAILERS,SOCIAL NETWORKING,SOCIAL MEDIA MARKETING,ETC
+                            </h5>
+                            <hr>
+                        </p>
+                      <a href="#"  class="btn btn-warning">UPLOAD SKILLS</a>
+                    </div>   
+                </div>
+            </div>
+
+            <ul class="pagination pt-1">
+                <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+                <li class="page-item "><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--PORTFOLIO-->
+    <section id="project" class="portfolio pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white">
+                        <h2>Our Project</h2>
+                        <p>How and what you have to do on your project....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white">
+                        <div class="card-body text-dark">
+                            <div class="img-area">
+                                <img src="team1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title text-primary">Make Team</h3>
+                            <hr>
+                            <p class="p1">
+                                <b>
+                                    A team is made up of two or more people who work together to achieve a common goal. Teams offer an alternative to a vertical chain of command and are a much more inclusive approach to a business organization.Teams are becoming more common in the business world today.
+                                </b>
+                            </p>
+                            <hr>
+                            <button class="btn btn-warning text-dark">CREATE TEAM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white">
+                        <div class="card-body text-dark">
+                            <div class="img-area">
+                                <img src="team2.jfif" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title text-primary">Our Goals</h3>
+                            <hr>
+                            <p class="p1">
+                                <b>
+                                   The outcomes you intend to achieve, whereas objectives are the specific actions and measurable steps that you need to take to achieve a goal. Goals and objectives work in tandem to achieve success. If you create goals without clear objectives.
+                                </b>   
+                            </p>
+                            <hr>
+                            <button class="btn btn-warning text-dark position-relative">YOUR CHOICE 
+                                <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">New</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white">
+                        <div class="card-body text-dark">
+                            <div class="img-area">
+                                <img src="team3.jfif" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title text-primary">Persenal Experience</h3>
+                            <hr>
+                            <p class="p1">
+                                <b>
+                                    Personal experience Personal experience of a human being is the moment-to-moment experience and sensory awareness of internal and external events or a sum of experiences forming an empirical unity such as a period of life.personal knowledge,personal skill.
+                                </b>
+                            </p>
+                            <hr>
+                            <button class="btn btn-warning text-dark">EXPERIENCE</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!--TEAM SECTION-->
+    <section id="team" class="team pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-header text-center text-white">
+                        <h3>Our Teams</h3>
+                        <p class="lead">A team is a group of individuals,All working together for a common purpose.just like this is my team...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parent" class="carousel slide"  data-bs-ride="carousel">
+                <!--<div class="carousel-indicators">
+                    <button data-bs-target="#parent" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#parent" data-bs-slide-to="1" ></button>
+                    <button data-bs-target="#parent" data-bs-slide-to="2" ></button>
+                    <button data-bs-target="#parent" data-bs-slide-to="3" ></button>
+                </div>-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card  text-center" >
+                            <div class="card-body text-dark">
+                                <img src="shoaib.png" alt="" class="rounded-circle" style=" width: 120px; height: 120px;">
+                                <h3 class="card-title text-primary">Muhammad Shoaib</h3>
+                                <hr>
+                                <p class="card-text">
+                                    Its Muhammad Shoaib a web designer since 2022. I have great skills in web designing. I design websites, webpages, web animation using HTML, HTML5, CSS, CSS3, Bootstrap5, Javascript and JQuery. I have also good skills in Logo designing, Picture editing, Picture background removing, and Advertisment using Abdobephotoshop and Adobe Illustrator.Thanks!
+                                </p>
+                                <hr>
+                                <p class="socials">
+                                    <i class="bi bi-twitter text-dark mx-1 "><img src="twitter.png" alt=""></i>
+                                    <i class="bi bi-FaceBook text-dark mx-1 "> <img src="instagram.png" alt=""></i>
+                                    <i class="bi bi-linkedin text-dark mx-1 "><img src="linkedin.png" alt=""></i>
+                                    <i class="bi bi-instagram text-dark mx-1 "><img src="facebook.png" alt=""></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="card  text-center" >
+                            <div class="card-body text-dark">
+                                <img src="saeed.png" alt="" class="rounded-circle" style=" width: 120px; height: 120px;">
+                                <h3 class="card-title text-primary">Muhammad Saeed</h3>
+                                <hr>
+                                <p class="card-text">
+                                    Its Mr Saeed a professional web designer and developer since January, 2019. I am a full stack web developer having more than 3 years of experience. I develop websites using HTML5, CSS, Bootstrap, JavaScript, JQuery, Node JS, Express JS, MySQL, Mongo DB, React JS, Adobe Photoshop and Adobe Illustrator. I am also Data Analyst. I have two years of experience.
+                                </p>
+                                <hr>
+                                <p class="socials">
+                                    <i class="bi bi-twitter text-dark mx-1 "><img src="twitter.png" alt=""></i>
+                                    <i class="bi bi-FaceBook text-dark mx-1 "> <img src="instagram.png" alt=""></i>
+                                    <i class="bi bi-linkedin text-dark mx-1 "><img src="linkedin.png" alt=""></i>
+                                    <i class="bi bi-instagram text-dark mx-1 "><img src="facebook.png" alt=""></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card  text-center" >
+                            <div class="card-body text-dark">
+                                <img src="sami.png" alt="" class="rounded-circle" style=" width: 120px; height: 120px;">
+                                <h3 class="card-title text-primary">Sami Khan</h3>
+                                <hr>
+                                <p class="card-text">
+                                    Its Mr. Samiullah Khan,this is the senior employee of Finore Filter Water Plant at Chairman streat,Model town Q block Lahore,And he has 3 years of experience in social marketing and management.i say for!You are guaranteed an enjoyable and productive experience.Due to their experience, they handle all the marketing and management of their water plant themselves.
+                                </p>
+                                <hr>
+                                <p class="socials">
+                                    <i class="bi bi-twitter text-dark mx-1 "><img src="twitter.png" alt=""></i>
+                                    <i class="bi bi-FaceBook text-dark mx-1 "> <img src="instagram.png" alt=""></i>
+                                    <i class="bi bi-linkedin text-dark mx-1 "><img src="linkedin.png" alt=""></i>
+                                    <i class="bi bi-instagram text-dark mx-1 "><img src="facebook.png" alt=""></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card  text-center" >
+                            <div class="card-body text-dark">
+                                <img src="user.jpeg" alt="" class="rounded-circle" style=" width:120px; height: 120px;">
+                                <h3 class="card-title text-primary">Ghulam Abbas</h3>
+                                <hr>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eius hic perferendis tenetur optio voluptatibus voluptatum vel natus,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ex eos harum a aliquid quo, expedita dicta voluptatem debitis. Eum ullam deserunt cupiditate. In modi deserunt ratione! Voluptatibus, possimus id kcweionm.
+                                </p>
+                                <hr>
+                                <p class="socials">
+                                    <i class="bi bi-twitter text-dark mx-1 "><img src="twitter.png" alt=""></i>
+                                    <i class="bi bi-FaceBook text-dark mx-1 "> <img src="instagram.png" alt=""></i>
+                                    <i class="bi bi-linkedin text-dark mx-1 "><img src="linkedin.png" alt=""></i>
+                                    <i class="bi bi-instagram text-dark mx-1 "><img src="facebook.png" alt=""></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-header text-center text-white">
+                        <h2>Contact Us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Corporis est excepturi sequ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m-auto">
+                    <form action="#" class="bg-light p-4 m-auto">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" required placeholder="your full name">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" required placeholder="your email">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <textarea  rows="3" class="form-control" required placeholder="your Query here"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-warning btn-block position-relative mt-2">Send Now
+                                <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">New</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <!--Footer-->
+    <footer class="bg-dark p-3 mt-4">
+        <div class="container">
+            <p class="text-danger text-center">All Right Reserved @website name</p>
+            <h3 class="master text-white"> Muhammad Shoaib</h3>
+            <p class="text-warning">(Web Designer & Developer)</p>
+            <p class="text-white"><spam class="text-warning">ADDRESS:</spam>LAHORE,PAKISTAN</p>
+            <p class="text-white"><spam class="text-warning">PHONE:</spam>0344-6225955</p>
+            <p class="text-white"><spam class="text-warning">EMAIL:</spam>ms5643503@gmail.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
